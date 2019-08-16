@@ -9,16 +9,16 @@
 - DOM
 
 - Javascript_Object
-  - [JavaScriptArray.md](./Javascript_Object/JavaScriptArray.md)
-  - [JavaScriptBoolean.md](./Javascript_Object/JavaScriptBoolean.md)
-  - [JavaScriptDate.md](./Javascript_Object/JavaScriptDate.md)
-  - [JavaScriptMath.md](./Javascript_Object/JavaScriptMath.md)
-  - [JavaScriptNumber.md](./Javascript_Object/JavaScriptNumber.md)
-  - [JavaScriptRegExp.md](./Javascript_Object/JavaScriptRegExp.md)
-  - [JavaScriptString.md](./Javascript_Object/JavaScriptString.md)
-  - [JavaScript全局属性和方法.md](./Javascript_Object/JavaScript全局属性和方法.md)
-  - [JavaScript运算符.md](./Javascript_Object/JavaScript运算符.md)
-  - [JavaScriptError(错误)对象.md](./Javascript_Object/JavaScriptError(错误)对象.md)
+  - [JavascriptArray.md](./Javascript_Object/JavascriptArray.md)
+  - [JavascriptBoolean.md](./Javascript_Object/JavascriptBoolean.md)
+  - [JavascriptDate.md](./Javascript_Object/JavascriptDate.md)
+  - [JavascriptMath.md](./Javascript_Object/JavascriptMath.md)
+  - [JavascriptNumber.md](./Javascript_Object/JavascriptNumber.md)
+  - [JavascriptRegExp.md](./Javascript_Object/JavascriptRegExp.md)
+  - [JavascriptString.md](./Javascript_Object/JavascriptString.md)
+  - [Javascript全局属性和方法.md](./Javascript_Object/Javascript全局属性和方法.md)
+  - [Javascript运算符.md](./Javascript_Object/Javascript运算符.md)
+  - [JavascriptError(错误)对象.md](./Javascript_Object/JavascriptError(错误)对象.md)
 
 - Nodejs
 

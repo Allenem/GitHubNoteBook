@@ -56,7 +56,7 @@ var d4 = new Date(79,0,24,11,33,0)  // Wed Jan 24 1979 11:33:00 GMT+0800 (中国
 | [getUTCSeconds()](#1get) | 根据世界时返回 Date 对象的秒钟 (0 ~ 59)。 |
 | [getUTCMilliseconds()](#1get) | 根据世界时返回 Date 对象的毫秒(0 ~ 999)。 |
 | getYear() | **已废弃**。 请使用 getFullYear() 方法代替。 |
-| [parse()](#2parse()) | 返回1970年1月1日午夜到指定日期（字符串）的毫秒数。 |
+| [parse()](#2parse) | 返回1970年1月1日午夜到指定日期（字符串）的毫秒数。 |
 | [setFullYear()](#3set) | 设置 Date 对象中的年份（四位数字）。 |
 | [setMonth()](#3set) | 设置 Date 对象中月份 (0 ~ 11)。 |
 | [setDate()](#3set) | 设置 Date 对象中月的某一天 (1 ~ 31)。 |
@@ -83,8 +83,8 @@ var d4 = new Date(79,0,24,11,33,0)  // Wed Jan 24 1979 11:33:00 GMT+0800 (中国
 | [toString()](#4to) | 把 Date 对象转换为字符串。 |
 | [toTimeString()](#4to) | 把 Date 对象的时间部分转换为字符串。 |
 | [toUTCString()](#4to) | 根据世界时，把 Date 对象转换为字符串。 |
-| [UTC()](#5UTC()) | 根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。 |
-| [valueOf()](#6valueOf()) | 返回 Date 对象的原始值。 |
+| [UTC()](#5utc) | 根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。 |
+| [valueOf()](#6valueof) | 返回 Date 对象的原始值。 |
 
 
 ## Date 对象属性

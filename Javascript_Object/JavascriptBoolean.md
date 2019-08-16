@@ -44,8 +44,8 @@ console.log(a.color);
 
 | 方法 | 描述 |
 |-|-|
-| [toString()](#1toString()) | 把布尔值转换为字符串，并返回结果。 |
-| [valueOf()](#2valueOf()) | 返回 Boolean 对象的原始值。 |
+| [toString()](#1tostring) | 把布尔值转换为字符串，并返回结果。 |
+| [valueOf()](#2valueof) | 返回 Boolean 对象的原始值。 |
 
 ### 1.toString()
 ```js
