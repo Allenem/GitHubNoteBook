@@ -30,61 +30,61 @@ var d4 = new Date(79,0,24,11,33,0)  // Wed Jan 24 1979 11:33:00 GMT+0800 (中国
 
 | 属性 | 描述 |
 |-|-|
-| [constructor](#1.constructor) | 返回对创建此对象的 Date 函数的引用。 |
-| [prototype](#2.prototype) | 使您有能力向对象添加属性和方法。 |
+| [constructor](#1constructor) | 返回对创建此对象的 Date 函数的引用。 |
+| [prototype](#2prototype) | 使您有能力向对象添加属性和方法。 |
 
 ### Date 对象方法
 
 | 方法 | 描述 |
 |-|-|
-| [getFullYear()](#1.get) | 从 Date 对象以四位数字返回年份。 |
-| [getMonth()](#1.get) | 从 Date 对象返回月份 (0 ~ 11)。 |
-| [getDate()](#1.get) | 从 Date 对象返回一个月中的某一天 (1 ~ 31)。 |
-| [getDay()](#1.get) | 从 Date 对象返回一周中的某一天 (0 ~ 6)。 |
-| [getHours()](#1.get) | 返回 Date 对象的小时 (0 ~ 23)。 |
-| [getMinutes()](#1.get) | 返回 Date 对象的分钟 (0 ~ 59)。 |
-| [getSeconds()](#1.get) | 返回 Date 对象的秒数 (0 ~ 59)。 |
-| [getMilliseconds()](#1.get) | 返回 Date 对象的毫秒(0 ~ 999)。 |
-| [getTime()](#1.get) | 返回 1970 年 1 月 1 日至今的毫秒数。 |
-| [getTimezoneOffset()](#1.get) | 返回本地时间与格林威治标准时间 (GMT) 的分钟差。 |
-| [getUTCFullYear()](#1.get) | 根据世界时从 Date 对象返回四位数的年份。 |
-| [getUTCMonth()](#1.get) | 根据世界时从 Date 对象返回月份 (0 ~ 11)。 |
-| [getUTCDate()](#1.get) | 根据世界时从 Date 对象返回月中的一天 (1 ~ 31)。 |
-| [getUTCDay()](#1.get) | 根据世界时从 Date 对象返回周中的一天 (0 ~ 6)。 |
-| [getUTCHours()](#1.get) | 根据世界时返回 Date 对象的小时 (0 ~ 23)。 |
-| [getUTCMinutes()](#1.get) | 根据世界时返回 Date 对象的分钟 (0 ~ 59)。 |
-| [getUTCSeconds()](#1.get) | 根据世界时返回 Date 对象的秒钟 (0 ~ 59)。 |
-| [getUTCMilliseconds()](#1.get) | 根据世界时返回 Date 对象的毫秒(0 ~ 999)。 |
+| [getFullYear()](#1get) | 从 Date 对象以四位数字返回年份。 |
+| [getMonth()](#1get) | 从 Date 对象返回月份 (0 ~ 11)。 |
+| [getDate()](#1get) | 从 Date 对象返回一个月中的某一天 (1 ~ 31)。 |
+| [getDay()](#1get) | 从 Date 对象返回一周中的某一天 (0 ~ 6)。 |
+| [getHours()](#1get) | 返回 Date 对象的小时 (0 ~ 23)。 |
+| [getMinutes()](#1get) | 返回 Date 对象的分钟 (0 ~ 59)。 |
+| [getSeconds()](#1get) | 返回 Date 对象的秒数 (0 ~ 59)。 |
+| [getMilliseconds()](#1get) | 返回 Date 对象的毫秒(0 ~ 999)。 |
+| [getTime()](#1get) | 返回 1970 年 1 月 1 日至今的毫秒数。 |
+| [getTimezoneOffset()](#1get) | 返回本地时间与格林威治标准时间 (GMT) 的分钟差。 |
+| [getUTCFullYear()](#1get) | 根据世界时从 Date 对象返回四位数的年份。 |
+| [getUTCMonth()](#1get) | 根据世界时从 Date 对象返回月份 (0 ~ 11)。 |
+| [getUTCDate()](#1get) | 根据世界时从 Date 对象返回月中的一天 (1 ~ 31)。 |
+| [getUTCDay()](#1get) | 根据世界时从 Date 对象返回周中的一天 (0 ~ 6)。 |
+| [getUTCHours()](#1get) | 根据世界时返回 Date 对象的小时 (0 ~ 23)。 |
+| [getUTCMinutes()](#1get) | 根据世界时返回 Date 对象的分钟 (0 ~ 59)。 |
+| [getUTCSeconds()](#1get) | 根据世界时返回 Date 对象的秒钟 (0 ~ 59)。 |
+| [getUTCMilliseconds()](#1get) | 根据世界时返回 Date 对象的毫秒(0 ~ 999)。 |
 | getYear() | **已废弃**。 请使用 getFullYear() 方法代替。 |
-| [parse()](#2.parse()) | 返回1970年1月1日午夜到指定日期（字符串）的毫秒数。 |
-| [setFullYear()](#3.set) | 设置 Date 对象中的年份（四位数字）。 |
-| [setMonth()](#3.set) | 设置 Date 对象中月份 (0 ~ 11)。 |
-| [setDate()](#3.set) | 设置 Date 对象中月的某一天 (1 ~ 31)。 |
-| [setHours()](#3.set) | 设置 Date 对象中的小时 (0 ~ 23)。 |
-| [setMinutes()](#3.set) | 设置 Date 对象中的分钟 (0 ~ 59)。 |
-| [setSeconds()](#3.set) | 设置 Date 对象中的秒钟 (0 ~ 59)。 |
-| [setMilliseconds()](#3.set) | 设置 Date 对象中的毫秒 (0 ~ 999)。 |
-| [setTime()](#3.set) | setTime() 方法以毫秒设置 Date 对象。 |
-| [setUTCFullYear()](#3.set) | 根据世界时设置 Date 对象中的年份（四位数字）。 |
-| [setUTCMonth()](#3.set) | 根据世界时设置 Date 对象中的月份 (0 ~ 11)。 |
-| [setUTCDate()](#3.set) | 根据世界时设置 Date 对象中月份的一天 (1 ~ 31)。 |
-| [setUTCHours()](#3.set) | 根据世界时设置 Date 对象中的小时 (0 ~ 23)。 |
-| [setUTCMinutes()](#3.set) | 根据世界时设置 Date 对象中的分钟 (0 ~ 59)。 |
-| [setUTCSeconds()](#3.set) | setUTCSeconds() 方法用于根据世界时 (UTC) 设置指定时间的秒字段。 |
-| [setUTCMilliseconds()](#3.set) | 根据世界时设置 Date 对象中的毫秒 (0 ~ 999)。 |
+| [parse()](#2parse()) | 返回1970年1月1日午夜到指定日期（字符串）的毫秒数。 |
+| [setFullYear()](#3set) | 设置 Date 对象中的年份（四位数字）。 |
+| [setMonth()](#3set) | 设置 Date 对象中月份 (0 ~ 11)。 |
+| [setDate()](#3set) | 设置 Date 对象中月的某一天 (1 ~ 31)。 |
+| [setHours()](#3set) | 设置 Date 对象中的小时 (0 ~ 23)。 |
+| [setMinutes()](#3set) | 设置 Date 对象中的分钟 (0 ~ 59)。 |
+| [setSeconds()](#3set) | 设置 Date 对象中的秒钟 (0 ~ 59)。 |
+| [setMilliseconds()](#3set) | 设置 Date 对象中的毫秒 (0 ~ 999)。 |
+| [setTime()](#3set) | setTime() 方法以毫秒设置 Date 对象。 |
+| [setUTCFullYear()](#3set) | 根据世界时设置 Date 对象中的年份（四位数字）。 |
+| [setUTCMonth()](#3set) | 根据世界时设置 Date 对象中的月份 (0 ~ 11)。 |
+| [setUTCDate()](#3set) | 根据世界时设置 Date 对象中月份的一天 (1 ~ 31)。 |
+| [setUTCHours()](#3set) | 根据世界时设置 Date 对象中的小时 (0 ~ 23)。 |
+| [setUTCMinutes()](#3set) | 根据世界时设置 Date 对象中的分钟 (0 ~ 59)。 |
+| [setUTCSeconds()](#3set) | setUTCSeconds() 方法用于根据世界时 (UTC) 设置指定时间的秒字段。 |
+| [setUTCMilliseconds()](#3set) | 根据世界时设置 Date 对象中的毫秒 (0 ~ 999)。 |
 | setYear() | **已废弃**。请使用 setFullYear() 方法代替。 |
-| [toDateString()](#4.to) | 把 Date 对象的日期部分转换为字符串。 |
+| [toDateString()](#4to) | 把 Date 对象的日期部分转换为字符串。 |
 | toGMTString() | **已废弃**。请使用 toUTCString() 方法代替。 |
-| [toISOString()](#4.to) | 使用 ISO 标准返回字符串的日期格式。 |
-| [toJSON()](#4.to) | 以 JSON 数据格式返回日期字符串。 |
-| [toLocaleDateString()](#4.to) | 根据本地时间格式，把 Date 对象的日期部分转换为字符串。 |
-| [toLocaleTimeString()](#4.to) | 根据本地时间格式，把 Date 对象的时间部分转换为字符串。 |
-| [toLocaleString()](#4.to) | 据本地时间格式，把 Date 对象转换为字符串。 |
-| [toString()](#4.to) | 把 Date 对象转换为字符串。 |
-| [toTimeString()](#4.to) | 把 Date 对象的时间部分转换为字符串。 |
-| [toUTCString()](#4.to) | 根据世界时，把 Date 对象转换为字符串。 |
-| [UTC()](#5.UTC()) | 根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。 |
-| [valueOf()](#6.valueOf()) | 返回 Date 对象的原始值。 |
+| [toISOString()](#4to) | 使用 ISO 标准返回字符串的日期格式。 |
+| [toJSON()](#4to) | 以 JSON 数据格式返回日期字符串。 |
+| [toLocaleDateString()](#4to) | 根据本地时间格式，把 Date 对象的日期部分转换为字符串。 |
+| [toLocaleTimeString()](#4to) | 根据本地时间格式，把 Date 对象的时间部分转换为字符串。 |
+| [toLocaleString()](#4to) | 据本地时间格式，把 Date 对象转换为字符串。 |
+| [toString()](#4to) | 把 Date 对象转换为字符串。 |
+| [toTimeString()](#4to) | 把 Date 对象的时间部分转换为字符串。 |
+| [toUTCString()](#4to) | 根据世界时，把 Date 对象转换为字符串。 |
+| [UTC()](#5UTC()) | 根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。 |
+| [valueOf()](#6valueOf()) | 返回 Date 对象的原始值。 |
 
 
 ## Date 对象属性

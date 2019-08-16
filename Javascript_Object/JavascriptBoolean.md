@@ -4,8 +4,8 @@
 
 | 属性 | 描述 |
 |-|-|
-| [constructor](#1.constructor ) | 返回对创建此对象的 Boolean 函数的引用 |
-| [prototype](#2.prototype) | 使您有能力向对象添加属性和方法。 |
+| [constructor](#1constructor ) | 返回对创建此对象的 Boolean 函数的引用 |
+| [prototype](#2prototype) | 使您有能力向对象添加属性和方法。 |
 
 ### 1.constructor 
 ```js
@@ -44,8 +44,8 @@ console.log(a.color);
 
 | 方法 | 描述 |
 |-|-|
-| [toString()](#1.toString()) | 把布尔值转换为字符串，并返回结果。 |
-| [valueOf()](#2.valueOf()) | 返回 Boolean 对象的原始值。 |
+| [toString()](#1toString()) | 把布尔值转换为字符串，并返回结果。 |
+| [valueOf()](#2valueOf()) | 返回 Boolean 对象的原始值。 |
 
 ### 1.toString()
 ```js

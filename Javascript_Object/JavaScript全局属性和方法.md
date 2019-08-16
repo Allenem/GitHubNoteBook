@@ -7,27 +7,27 @@ JavaScript 可用于创建Javascript对象。
 ### JavaScript 全局属性
 | 属性 | 描述 |
 |-|-|
-| [Infinity](#1.Infinity) | 代表正的无穷大的数值。 |
-| [NaN](#2.NaN) | 指示某个值是不是数字值。 |
-| [undefined](#3.undefined) | 指示未定义的值。 |
+| [Infinity](#1Infinity) | 代表正的无穷大的数值。 |
+| [NaN](#2NaN) | 指示某个值是不是数字值。 |
+| [undefined](#3undefined) | 指示未定义的值。 |
 
 ### JavaScript 全局函数
 
 | 函数 | 描述 |
 |-|-|
-| [decodeURI()](#1.encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 解码某个编码的 URI。 |
-| [decodeURIComponent()](#1.encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 解码一个编码的 URI 组件。 |
-| [encodeURI()](#1.encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 把字符串编码为 URI。 |
-| [encodeURIComponent()](#1.encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 把字符串编码为 URI 组件。 |
-| [escape()](#2.escape()&unescape()) | 对字符串进行编码。 |
-| [unescape()](#2.escape()&unescape()) | 对由 escape() 编码的字符串进行解码。 |
-| [eval()](#3.eval()) | 计算 JavaScript 字符串，并把它作为脚本代码来执行。 |
-| [isFinite()](#4.isFinite()) | 检查某个值是否为有穷大的数。 |
-| [isNaN()](#5.isNaN()) | 检查某个值是否是数字。 |
-| [Number()](#6.Number()) | 把对象的值转换为数字。 |
-| [parseFloat()](#7.parseFloat()) | 解析一个字符串并返回一个浮点数。 |
-| [parseInt()](#8.parseInt()) | 解析一个字符串并返回一个整数。 |
-| [String()](#9.String()) | 把对象的值转换为字符串。 |
+| [decodeURI()](#1encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 解码某个编码的 URI。 |
+| [decodeURIComponent()](#1encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 解码一个编码的 URI 组件。 |
+| [encodeURI()](#1encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 把字符串编码为 URI。 |
+| [encodeURIComponent()](#1encodeURI()&decodeURI()&encodeURIComponent()&decodeURIComponent()) | 把字符串编码为 URI 组件。 |
+| [escape()](#2escape()&unescape()) | 对字符串进行编码。 |
+| [unescape()](#2escape()&unescape()) | 对由 escape() 编码的字符串进行解码。 |
+| [eval()](#3eval()) | 计算 JavaScript 字符串，并把它作为脚本代码来执行。 |
+| [isFinite()](#4isFinite()) | 检查某个值是否为有穷大的数。 |
+| [isNaN()](#5isNaN()) | 检查某个值是否是数字。 |
+| [Number()](#6Number()) | 把对象的值转换为数字。 |
+| [parseFloat()](#7parseFloat()) | 解析一个字符串并返回一个浮点数。 |
+| [parseInt()](#8parseInt()) | 解析一个字符串并返回一个整数。 |
+| [String()](#9String()) | 把对象的值转换为字符串。 |
 
 
 ## JavaScript 全局属性

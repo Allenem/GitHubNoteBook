@@ -12,29 +12,29 @@
 ### String 对象方法
 |方法|描述|
 |-|-|
-|[charAt()](#1.charAt()&charCodeAt()&fromCharCode())|返回在指定位置的字符。|
-|[charCodeAt()](#1.charAt()&charCodeAt()&fromCharCode())|返回在指定的位置的字符的 Unicode 编码。|
-|[fromCharCode()](#1.charAt()&charCodeAt()&fromCharCode())|将 Unicode 编码转为字符。|
-|[concat()](#concat())|连接两个或更多字符串，并返回新的字符串。|
-|[includes()](#3.includes())|查找字符串中是否包含指定的子字符串。|
-|[indexOf()](#4.indexOf(&lastIndexOf())|返回某个指定的字符串值在字符串中首次出现的位置。|
-|[lastIndexOf()](#4.indexOf(&lastIndexOf())|从后向前搜索字符串，并从起始位置（0）开始计算返回字符串最后出现的位置。|
-|[match()](#5.match())|查找找到一个或多个正则表达式的匹配。|
-|[repeat()](#6.repeat())|复制字符串指定次数，并将它们连接在一起返回。|
-|[replace()](#7.replace())|在字符串中查找匹配的子串， 并替换与正则表达式匹配的子串。|
-|[search()](#8.search())|查找与正则表达式相匹配的值。|
-|[slice()](#9.slice()&substring())|提取字符串的片断，并在新的字符串中返回被提取的部分。|
-|[substring()](#9.slice()&substring())|提取字符串中两个指定的索引号之间的字符。|
+|[charAt()](#1charAt()&charCodeAt()&fromCharCode())|返回在指定位置的字符。|
+|[charCodeAt()](#1charAt()&charCodeAt()&fromCharCode())|返回在指定的位置的字符的 Unicode 编码。|
+|[fromCharCode()](#1charAt()&charCodeAt()&fromCharCode())|将 Unicode 编码转为字符。|
+|[concat()](#2concat())|连接两个或更多字符串，并返回新的字符串。|
+|[includes()](#3includes())|查找字符串中是否包含指定的子字符串。|
+|[indexOf()](#4indexOf(&lastIndexOf())|返回某个指定的字符串值在字符串中首次出现的位置。|
+|[lastIndexOf()](#4indexOf(&lastIndexOf())|从后向前搜索字符串，并从起始位置（0）开始计算返回字符串最后出现的位置。|
+|[match()](#5match())|查找找到一个或多个正则表达式的匹配。|
+|[repeat()](#6repeat())|复制字符串指定次数，并将它们连接在一起返回。|
+|[replace()](#7replace())|在字符串中查找匹配的子串， 并替换与正则表达式匹配的子串。|
+|[search()](#8search())|查找与正则表达式相匹配的值。|
+|[slice()](#9slice()&substring())|提取字符串的片断，并在新的字符串中返回被提取的部分。|
+|[substring()](#9slice()&substring())|提取字符串中两个指定的索引号之间的字符。|
 |[substr()](#10substr())|从起始索引号提取字符串中指定数目的字符。|
-|[split()](#11.split())|把字符串分割为字符串数组。|
-|[startsWith()](#12.startWith())|查看字符串是否以指定的子字符串开头。|
-|[toLowerCase()](#13.toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|把字符串转换为小写。|
-|[toUpperCase()](#13.toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|把字符串转换为大写。|
-|[toLocaleLowerCase()](#13.toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|根据本地主机的语言环境把字符串转换为小写。|
-|[toLocaleUpperCase()](#13.toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|根据本地主机的语言环境把字符串转换为大写。|
-|[trim()](#14.trim())|去除字符串两边的空白|
-|[valueOf()](#15.valueOf()&toString())|返回某个字符串对象的原始值。|
-|[toString()](#15.valueOf()&toString())|返回一个字符串。|
+|[split()](#11split())|把字符串分割为字符串数组。|
+|[startsWith()](#12startWith())|查看字符串是否以指定的子字符串开头。|
+|[toLowerCase()](#13toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|把字符串转换为小写。|
+|[toUpperCase()](#13toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|把字符串转换为大写。|
+|[toLocaleLowerCase()](#13toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|根据本地主机的语言环境把字符串转换为小写。|
+|[toLocaleUpperCase()](#13toLowerCase()&toUpperCase()&toLocaleLowerCase()&toLocaleUpperCase())|根据本地主机的语言环境把字符串转换为大写。|
+|[trim()](#14trim())|去除字符串两边的空白|
+|[valueOf()](#15valueOf()&toString())|返回某个字符串对象的原始值。|
+|[toString()](#15valueOf()&toString())|返回一个字符串。|
 
 ## String 对象属性
 
