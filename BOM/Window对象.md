@@ -67,7 +67,7 @@ Window 对象表示浏览器中打开的窗口。
 | [prompt()](#prompt) | 显示可提示用户输入的对话框。 |
 | [resizeBy()](#resizebyto) | 按照指定的像素调整窗口的大小。 |
 | [resizeTo()](#resizebyto) | 把窗口的大小调整到指定的宽度和高度。 |
-| scroll() | 已废弃。 该方法已经使用了 [scrollTo()](https://www.runoob.com/jsref/met-win-scrollto.html) 方法来替代。 |
+| scroll() | 已废弃。 该方法已经使用了 [scrollTo()](#scrollbyto) 方法来替代。 |
 | [scrollBy()](#scrollbyto) | 按照指定的像素值来滚动内容。 |
 | [scrollTo()](#scrollbyto) | 把内容滚动到指定的坐标。 |
 | [stop()](#stop) | 停止页面载入。 |
