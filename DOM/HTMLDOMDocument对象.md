@@ -73,6 +73,7 @@ HTML文档中可以使用以下属性和方法:
 | [document.getElementsByTagName()](#get) | 返回带有指定标签名的对象集合。 |
 | [document.querySelector()](#get) | 返回文档中匹配指定的CSS选择器的第一元素 |
 | [document.querySelectorAll()](#get) | document.querySelectorAll() 是 HTML5中引入的新方法，返回文档中匹配的CSS选择器的所有元素节点列表 |
+|以下链接不在本文章中|-|
 | [document.doctype](https://www.runoob.com/jsref/prop-document-doctype.html) | 返回与文档相关的文档类型声明 (DTD)。 |
 | [document.documentElement](https://www.runoob.com/jsref/prop-document-documentelement.html) | 返回文档的根节点 |
 | [document.documentMode](https://www.runoob.com/jsref/prop-doc-documentmode.html) | 返回用于通过浏览器渲染文档的模式 |
