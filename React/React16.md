@@ -1,5 +1,9 @@
 # React16基础知识总结
 
+>学习地址：https://www.bilibili.com/video/av51455080
+>
+>demo地址：https://github.com/Allenem/ReactDraft/tree/master/jishupang/demo01
+
 ## CONTENT
 
 - [运用脚手架初始化React项目](#运用脚手架初始化React项目)
@@ -657,7 +661,9 @@ class Todoitem extends Component {
 
 ## React调试工具
 
-科学上网之后从这个网址(https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)安装 `React Developer Tools` 插件
+科嗯学嗯上嗯网之后从这个网址安装 `React Developer Tools` 插件：
+
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
 图标灰色：未使用react；红色：react开发环境；黑色：react产品环境
 
@@ -763,17 +769,17 @@ export default sonComponent
 
 v16.0之前
 
-![ReactLifecycleBefore16.png](../img/ReactLifecycleBefore16.png)
+![ReactLifecycleBefore16.png](../img/React/ReactLifecycleBefore16.png)
 
-![ReactLifecycle16前.png](../img/ReactLifecycle16前.png)
+![ReactLifecycle16前.png](../img/React/ReactLifecycle16前.png)
 
 v16.3
 
-![ReactLifecycle16.3.png](../img/ReactLifecycle16.3.png)
+![ReactLifecycle16.3.png](../img/React/ReactLifecycle16.3.png)
 
 v16.4
 
-![ReactLifecycle16.4.png](../img/ReactLifecycle16.4.png)
+![ReactLifecycle16.4.png](../img/React/ReactLifecycle16.4.png)
 
 ---
 
@@ -1084,11 +1090,11 @@ componentWillUnmount(){
 
 `getDerivedStateFromProps` 本来（React v16.3中）是只在创建和更新阶段（由父组件引发部分）。也就是说只能创建，或者父组件引发。如果不是由父组件引发（例如自身 `setState` 引发或者 `forceUpdate` 引发），那么 `getDerivedStateFromProps` 也不会被调用。上面那张图 `React v16.3` 一目了然，重新看一下吧。
 
-![ReactLifecycle16.3.png](../img/ReactLifecycle16.3.png)
+![ReactLifecycle16.3.png](../img/React/ReactLifecycle16.3.png)
 
 这样的话理解起来有点乱，在 `React v16.4` 中改正了这一点，让 `getDerivedStateFromProps` 无论是 `Mounting` 还是 `Updating` ，也无论是因为什么引起的 `Updating` ，全部都会被调用，具体可看 `React v16.4` 的生命周期图。
 
-![ReactLifecycle16.4.png](../img/ReactLifecycle16.4.png)
+![ReactLifecycle16.4.png](../img/React/ReactLifecycle16.4.png)
 
 `static getDerivedStateFromProps(props, state)` 在组件创建时和更新时的 `render` 方法之前调用，它应该返回一个对象来更新状态，或者返回 `null` 来不更新任何内容。
 
