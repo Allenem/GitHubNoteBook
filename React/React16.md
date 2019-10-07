@@ -762,11 +762,17 @@ export default sonComponent
 ## React生命周期
 
 v16.0之前
+
 ![ReactLifecycleBefore16.png](../img/ReactLifecycleBefore16.png)
+
 ![ReactLifecycle16前.png](../img/ReactLifecycle16前.png)
+
 v16.3
+
 ![ReactLifecycle16.3.png](../img/ReactLifecycle16.3.png)
+
 v16.4
+
 ![ReactLifecycle16.4.png](../img/ReactLifecycle16.4.png)
 
 ---
