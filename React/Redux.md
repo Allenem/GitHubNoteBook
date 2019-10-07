@@ -29,6 +29,10 @@
   - [Redux-saga的使用(获取list)](#Redux-saga的使用获取list)
 - React-Redux
   - [React-Redux插件介绍和安装](#React-Redux插件介绍和安装)
+  - [React-Redux的Provider和Connect](#React-Redux的Provider和Connect)
+  - [React-Redux修改Store中state的值](#React-Redux修改Store中state的值)
+  - [React-Redux增加和删除list的值](#React-Redux增加和删除list的值)
+  - [代码优化](#代码优化)
 
 ---
 
@@ -916,3 +920,271 @@ yarn add react-redux
 yarn add redux
 yarn start
 ```
+
+---
+
+## React-Redux的Provider和Connect
+
+1. 提供器 `Provider` ， 包裹所有组件
+
+`src/index.js`
+
+```js
+// 添加和修改如下
+import { Provider } from 'react-redux';
+import store from './store';
+
+const App = (
+  <Provider store={store}>
+    <Todolist />
+  </Provider>
+)
+- ReactDOM.render(<Todolist />, document.getElementById('root'));
++ ReactDOM.render(App, document.getElementById('root'));
+```
+
+2. 连接器 `connect` ，组建中连接， `store` 中的 `state` 映射成 `props`
+
+`Todolis.js`
+
+```js
++ import { connect } from 'react-redux';
+- import store from './store';
+
+- this.state = store.getState()
+- value = {this.state.inputValue}
++ value = {this.props.inputValue}
+
++
+// 映射器，状态映射成属性
+const stateToPrpos = (state) => {
+  return{
+    inputValue: state.inputValue
+  }
+}
+
+- export default Todolist
++ export default connect(stateToPrpos,nul)(Todolist);
+// 第一个是 state->props 映射，第二个是 dispatch->props 映射
+```
+
+---
+
+## React-Redux修改Store中state的值
+
+`Todolist.js`
+
+```js
+- <input 
+    value={this.props.inputValue} 
+    onChange={this.inputChange.bind(this)}
+  />
++ <input 
+    value={this.props.inputValue} 
+    onChange={this.props.inputChange}
+  />
+
++
+// dispatch->props 映射
+const dispatchToPrpos = (dispatch) => {
+  return{
+    inputChange(e){
+      let action = {
+        type: 'change_input',
+        value: e.target.value
+      }
+      dispatch(action)
+    }
+  }
+}
+
+- export default connect(stateToPrpos,nul)(Todolist);
++ export default connect(stateToPrpos,dispatchToPrpos)(Todolist);
+```
+
+`src/store/reducer.js`
+
+```js
+export default (state = defaultState,action) => {
+
+  if(action.type === 'change_input'){
+    let newState = JSON.parse(JSON.stringify(state))
+    newState.inputValue = action.value
+    return newState
+  }
+
+  return state
+}
+```
+
+---
+
+## React-Redux增加和删除list的值
+
+`Todolist.js`
+
+```js
+...
+class Todolist extends Component {
+
+  render() { 
+    return ( 
+      <div>
+        <div>
+          <input value={this.props.inputValue} onChange={this.props.inputChange}/>
+          <button onClick={this.props.clickBtn}>提交</button>
+        </div>
+        <ul>
+          {
+            this.props.list.map((item,index)=>{
+              return(
+                <li key={index+item} onClick={()=>this.props.delItem(index)}>{item}</li>
+              )
+            })
+          }
+        </ul>
+      </div>
+    );
+  }
+}
+...
+const dispatchToPrpos = (dispatch) => {
+  return{
+    inputChange(e){
+      let action = {
+        type: 'change_input',
+        value: e.target.value
+      }
+      dispatch(action)
+    },
+    clickBtn(){
+      let action = {
+        type: 'add_item'
+      }
+      dispatch(action)
+    },
+    delItem(index){
+      let action = {
+        type: 'del_item',
+        index
+      }
+      dispatch(action)
+    }
+  }
+}
+...
+```
+
+`src/store/reducer.js`
+
+```js
+const defaultState = {
+  inputValue: 'aaa',
+  list: [
+    'bbb',
+    'ccc',
+    'ddd'
+  ]
+}
+
+export default (state = defaultState,action) => {
+
+  if(action.type === 'change_input'){
+    let newState = JSON.parse(JSON.stringify(state))
+    newState.inputValue = action.value
+    return newState
+  }
+
+  if(action.type === 'add_item'){
+    let newState = JSON.parse(JSON.stringify(state))
+    newState.list.push(newState.inputValue)
+    newState.inputValue = ''
+    return newState
+  }
+
+  if(action.type === 'del_item'){
+    let newState = JSON.parse(JSON.stringify(state))
+    newState.list.splice(action.index,1)
+    return newState
+  }
+
+  return state
+}
+```
+
+---
+
+## 代码优化
+
+1. 解构赋值
+
+`Todolist.js`中
+
+```js
++ let { inputValue,list,inputChange,clickBtn,delItem } = this.props;
+- this.props.inputValue
++ inputValue
+...
+```
+
+2. 拆分出无状态组件
+
+`Todolist.js`变为
+```js
+- // import React, { Component } from 'react';
++ import React from 'react';
+import { connect } from 'react-redux';
+
+- // 删除class
+/*class Todolist extends Component {
+
+  render() { 
+    let { inputValue,list,inputChange,clickBtn,delItem } = this.props;
+    return ( 
+      <div>
+        <div>
+          <input value={inputValue} onChange={inputChange}/>
+          <button onClick={clickBtn}>提交</button>
+        </div>
+        <ul>
+          {
+            list.map((item,index)=>{
+              return(
+                <li key={index+item} onClick={()=>delItem(index)}>{item}</li>
+              )
+            })
+          }
+        </ul>
+      </div>
+    );
+  }
+}
+*/
++ // 变为函数
+const Todolist = (props) => {
+  let { inputValue,list,inputChange,clickBtn,delItem } = props;
+  return ( 
+    <div>
+      <div>
+        <input value={inputValue} onChange={inputChange}/>
+        <button onClick={clickBtn}>提交</button>
+      </div>
+      <ul>
+        {
+          list.map((item,index)=>{
+            return(
+              <li key={index+item} onClick={()=>delItem(index)}>{item}</li>
+            )
+          })
+        }
+      </ul>
+    </div>
+  );
+}
+```
+
+---
+
+\_(:з」∠)_
+
+完结(END)
