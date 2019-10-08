@@ -47,6 +47,8 @@
 
 ## 使用create-react-app生成demo02，引入ant-design
 
+以下代码在 [demo02](https://github.com/Allenem/ReactDraft/tree/master/jishupang/demo02)
+
 ### 安装
 
 ```bash
@@ -912,6 +914,8 @@ export default mySagas
 
 ## React-Redux插件介绍和安装
 
+以下代码在 [demo03](https://github.com/Allenem/ReactDraft/tree/master/jishupang/demo03)
+
 现生成新项目，安装 `react-redux` `redux`
 ```bash
 create-react-app demo03
@@ -964,8 +968,8 @@ const stateToPrpos = (state) => {
 }
 
 - export default Todolist
-+ export default connect(stateToPrpos,nul)(Todolist);
-// 第一个是 state->props 映射，第二个是 dispatch->props 映射
++ export default connect(stateToPrpos,null)(Todolist);
+// 第一个是 state->props 映射，第二个是 dispatch->props 映射，暂时设为null，后面会补上
 ```
 
 ---
@@ -1181,6 +1185,21 @@ const Todolist = (props) => {
     </div>
   );
 }
+
+// state 映射器
+const stateToPrpos = (state) => {
+  return{
+    // 数据
+  }
+}
+// dispatch 映射器
+const dispatchToPrpos = (dispatch) => {
+  return{
+    // 函数
+  }
+}
+
+export default connect(stateToPrpos,dispatchToPrpos)(Todolist);
 ```
 
 ---
@@ -1188,3 +1207,5 @@ const Todolist = (props) => {
 \_(:з」∠)_
 
 完结(END)
+
+[TOP](#)
