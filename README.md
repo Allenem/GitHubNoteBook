@@ -45,6 +45,7 @@
   - [考研相关](./School/考研相关.md)
   - [华工电信学院本科实验课设](./School/华工电信学院本科实验课设.md)
   - [DES](./School/DES.md)
+  - [网课失去焦点离开页面就自动暂停解决方法](./School/网课失去焦点离开页面就自动暂停解决方法.md)
 
 - SomeProjects
   - [资金管理系统(Vue+Node+ElementUI)](./SomeProjects/CapitalManagementSystem.md)
