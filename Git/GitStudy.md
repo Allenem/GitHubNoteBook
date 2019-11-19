@@ -426,4 +426,44 @@ $ git diff HEAD
 
 ---
 
+十一、在 `Github` 较精确搜索开源项目
+
+- 1.在指定位置搜
+
+在 `名字` 中搜索
+
+`in:name xxx` 
+
+在 `readme` 中搜索
+
+`in:readme xxx` 
+
+在描述中搜索
+
+`in:description xxx` 
+
+- 2.限制条件
+
+限定 `star` 数
+
+`stars:>1000`
+
+限定 `fork` 数
+
+`forks:>1000`
+
+限定语言
+
+`language:xxx`
+
+限定最后提交时间
+
+`pushed:>xxxx-xx-xx`
+
+- 3.1和2组合搜索示例
+
+`in:descripton 资金管理系统 stars:>=3 language:vue`
+
+---
+
 [BackToTop](#)
