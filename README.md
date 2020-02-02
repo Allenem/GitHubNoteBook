@@ -54,19 +54,33 @@
   - [二维码(java)](./SomeProjects/javaQRCode.md)
   - [2048小游戏](./SomeProjects/2048.md)
 
-- Nodejs
-
-- Java
-
 - Python
-
-- CSS
+  - [Python的安装和依赖的安装](./Python/Python的安装和依赖的安装.md)
+  - [基础](./Python/基础.md)
+  - [变量](./Python/变量.md)
+  - [数据类型](./Python/数据类型.md)
+  - [条件判断和循环](./Python/条件判断和循环.md)
+  - [函数和类](./Python/函数和类.md)
+  - [模块](./Python/模块.md)
+  - [文件操作](./Python/文件操作.md)
+  - [异常处理](./Python/异常处理.md)
+  - [垃圾回收gc](./Python/垃圾回收gc.md)
+  - [多线程](./Python/多线程.md)
+  - [时间模块](./Python/时间模块.md)
+  - [http模块](./Python/http模块.md)
+  - [常用内置模块](./Python/常用内置模块.md)
 
 - Markdown
   - [mdStudy](./Markdown/mdStudy.md)
 
 - Git
   - [GitStudy](./Git/GitStudy.md)
+
+- Nodejs
+
+- Java
+
+- CSS
 
 ---
 
