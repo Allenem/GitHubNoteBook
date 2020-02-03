@@ -1,6 +1,6 @@
 # Python的安装和依赖的安装
 
-> 学习地址：https://github.com/vipstone/python
+> 学习地址：https://github.com/vipstone/python & https://www.runoob.com/python3/python3-tutorial.html
 
 ## 一、Python3的安装
 
