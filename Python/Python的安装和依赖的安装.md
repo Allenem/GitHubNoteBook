@@ -140,9 +140,9 @@ pip install face_recognition -i http://mirrors.aliyun.com/pypi/simple
 
 在你的 `C:\Users\你的用户名\` 目录下创建 `pip` 目录， `pip` 目录下创建 `pip.ini` 文件（注意：以 `UTF-8` 无 `BOM` 格式编码）；
 
-`pip.ini` 文件内容：
+`pip.ini` 文件内容（单个站点）：
 
-```
+```ini
 [global]
 
 index-url=http://mirrors.aliyun.com/pypi/simple/
@@ -151,7 +151,55 @@ index-url=http://mirrors.aliyun.com/pypi/simple/
 
 trusted-host=mirrors.aliyun.com
 ```
+
+参考：https://www.cnblogs.com/night-xing/p/12094099.html 
+
+`pip.ini` 文件内容（多个站点）：
+
+```ini
+[global]
+index-url=http://pypi.douban.com/simple
+extra-index-url=
+  http://mirrors.aliyun.com/pypi/simple/
+  https://pypi.tuna.tsinghua.edu.cn/simple/
+  http://pypi.mirrors.ustc.edu.cn/simple/
+
+[install]
+trusted-host=
+  pypi.douban.com
+  mirrors.aliyun.com
+  pypi.tuna.tsinghua.edu.cn
+  pypi.mirrors.ustc.edu.cn
+```
+
 注意：`trusted-host` 选项为了避免麻烦是必须的，否则使用的时候会提示不受信任，或者添加 `--trusted-host=mirrors.aliyun.com` 选项
+
+
+:x: 像 https://blog.csdn.net/qq_35203425/article/details/103876768 中所说的下面这种是错误的 :x:
+
+```ini
+[global]
+index-url=http://pypi.douban.com/simple
+extra-index-url=http://mirrors.aliyun.com/pypi/simple/
+extra-index-url=https://pypi.tuna.tsinghua.edu.cn/simple/
+extra-index-url=http://pypi.mirrors.ustc.edu.cn/simple/
+
+[install]
+trusted-host=pypi.douban.com
+trusted-host=mirrors.aliyun.com
+trusted-host=pypi.tuna.tsinghua.edu.cn
+trusted-host=pypi.mirrors.ustc.edu.cn
+```
+
+使用 pip 会报错如下
+
+```bash
+Configuration file could not be loaded.
+While reading from 'C:\\Users\\username\\pip\\pip.ini' [line 10]: option 'extra-index-url' in section 'global' already exists
+
+Configuration file could not be loaded.
+While reading from 'C:\\Users\\username\\pip\\pip.ini' [line 10]: option 'trusted-host' in section 'install' already exists
+```
 
 ---
 
