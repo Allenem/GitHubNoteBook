@@ -83,6 +83,7 @@
     - [http模块](./Python/http模块.md)
     - [常用内置模块](./Python/常用内置模块.md)
     - [路径问题](./Python/路径问题.md)
+    - [Python打包exe](./Python/Python打包exe.md)
 
   - OpenCV-Python Tutorials
   
