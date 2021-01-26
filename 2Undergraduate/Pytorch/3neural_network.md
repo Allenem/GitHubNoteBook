@@ -8,9 +8,9 @@
     - 激活函数
     - 循环神经网络层(RNN)
     - 损失函数
-- 优化器
+- `torch.optim`优化器
 - `nn.functional`
-- 初始化策略
+- `nn.init`初始化策略
 - `nn.Module` 深入分析
 - `nn` 和 `autograd` 的关系
 - 牛刀小试：用50行代码搭建 `ResNet`

@@ -649,7 +649,7 @@ Variable 的构造函数需要传入 tensor，同时有两个可选参数：
 - requires_grad(bool)：是否需要对该 Variable 求导。
 - volatile(bool)：意为“挥发”，设置为True，构建在该 Variable 之上的图都不会求导，专门为推理阶段设计。
 
-若想要计算各个 Variable 的梯度，只需调用根节点 variable 的 backward 方法，autogra 会自动沿着计算图反向传播，计算每一个叶子节点的梯度。
+若想要计算各个 Variable 的梯度，只需调用根节点 variable 的 backward 方法，autograd 会自动沿着计算图反向传播，计算每一个叶子节点的梯度。
 
 `variable.backward(grad_variables=None, retain_graph=None, create_graph=None)` 主要有如下参数：
 
@@ -765,7 +765,7 @@ print('Begin backwarding')
 # 1.use their own backward 
 # z.backward()
 # 2.use MultiplyAdd.backward
-w.grad, x.grad,  b.grad = z.grad_fn.apply(V(t.ones(1)))
+w.grad, x.grad, b.grad = z.grad_fn.apply(V(t.ones(1)))
 print(w.grad, x.grad,  b.grad)
 ```
 

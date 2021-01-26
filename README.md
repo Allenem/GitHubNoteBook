@@ -52,16 +52,22 @@
 
   - [模式识别](https://github.com/Allenem/PatternRecognition)
   - PyTorch
-    - [快速入门](./2Undergraduate/Pytorch/quick_start.md)
-    - [Tensor&autograd](./2Undergraduate/Pytorch/Tensor&autograd.md)
-    - [神经网络工具箱nn](./2Undergraduate/Pytorch/neural_network.md)
-    - 以下未完待续 。 。 。
-    - [PyTorch中常用的工具](./2Undergraduate/Pytorch/utility.md)
-    - [PyTorch实战1：猫狗二分类](./2Undergraduate/Pytorch/Cat&Dog.md)
-    - [PyTorch实战2：GAN生成插画](./2Undergraduate/Pytorch/GANPainting.md)
-    - [PyTorch实战3：风格迁移](./2Undergraduate/Pytorch/StyleMigration.md)
-    - [PyTorch实战4：RNN写诗](./2Undergraduate/Pytorch/RNNPoet.md)
-    - [PyTorch实战5：ImageCaption看图说话](./2Undergraduate/Pytorch/ImageCaption.md)
+    - [**PyTorch总结（知识点尽量完整）**](./2Undergraduate/Pytorch/5conclusion.md)
+    - [快速入门](./2Undergraduate/Pytorch/1quick_start.md)
+    - [Tensor&autograd](./2Undergraduate/Pytorch/2Tensor&autograd.md)
+    - [神经网络工具箱nn](./2Undergraduate/Pytorch/3neural_network.md)
+    - [PyTorch中常用的工具](./2Undergraduate/Pytorch/4utility.md)
+    - 以下未完不续了 。 。 。
+    - 实战
+      - PyTorch实战1：猫狗二分类
+      - PyTorch实战2：GAN生成插画
+      - PyTorch实战3：风格迁移
+      - PyTorch实战4：RNN写诗
+      - PyTorch实战5：ImageCaption看图说话
+      - MNIST小试牛刀
+      - MobileNet详解及PyTorch实现
+      - SENet详解及PyTorch实现
+      - EfficientNet详解及PyTorch实现
   - [ML(MachineLearning)](./2Undergraduate/ML/ML.md)
   - [MI(MedicialImage)](./2Undergraduate/MI/MI.md)
   - NLP(NaturalLanguageProcessing)
