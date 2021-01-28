@@ -52,7 +52,7 @@
 
   - [模式识别](https://github.com/Allenem/PatternRecognition)
   - PyTorch
-    - [**PyTorch总结（知识点尽量完整）**](./2Undergraduate/Pytorch/5conclusion.md)
+    - [PyTorch总结](./2Undergraduate/Pytorch/5conclusion.md)
     - [快速入门](./2Undergraduate/Pytorch/1quick_start.md)
     - [Tensor&autograd](./2Undergraduate/Pytorch/2Tensor&autograd.md)
     - [神经网络工具箱nn](./2Undergraduate/Pytorch/3neural_network.md)
@@ -68,6 +68,7 @@
       - MobileNet详解及PyTorch实现
       - SENet详解及PyTorch实现
       - EfficientNet详解及PyTorch实现
+  - [TensorFlow](./2Undergraduate/TensorFlow/TensorFlow.md)
   - [ML(MachineLearning)](./2Undergraduate/ML/ML.md)
   - [MI(MedicialImage)](./2Undergraduate/MI/MI.md)
   - NLP(NaturalLanguageProcessing)
