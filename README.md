@@ -51,12 +51,14 @@
 ## 二、研究生阶段
 
   - [模式识别](https://github.com/Allenem/PatternRecognition)
+  - [深度学习](https://github.com/Allenem/DeepLearningCourse)
+  - [医学影像](https://github.com/Allenem/MedicalImage)
   - PyTorch
-    - [PyTorch总结](./2Undergraduate/Pytorch/5conclusion.md)
-    - [快速入门](./2Undergraduate/Pytorch/1quick_start.md)
-    - [Tensor&autograd](./2Undergraduate/Pytorch/2Tensor&autograd.md)
-    - [神经网络工具箱nn](./2Undergraduate/Pytorch/3neural_network.md)
-    - [PyTorch中常用的工具](./2Undergraduate/Pytorch/4utility.md)
+    - [PyTorch总结](./2Postgraduate/Pytorch/5conclusion.md)
+    - [快速入门](./2Postgraduate/Pytorch/1quick_start.md)
+    - [Tensor&autograd](./2Postgraduate/Pytorch/2Tensor&autograd.md)
+    - [神经网络工具箱nn](./2Postgraduate/Pytorch/3neural_network.md)
+    - [PyTorch中常用的工具](./2Postgraduate/Pytorch/4utility.md)
     - 以下未完不续了 。 。 。
     - 实战
       - PyTorch实战1：猫狗二分类
@@ -68,9 +70,9 @@
       - MobileNet详解及PyTorch实现
       - SENet详解及PyTorch实现
       - EfficientNet详解及PyTorch实现
-  - [TensorFlow](./2Undergraduate/TensorFlow/TensorFlow.md)
-  - [ML(MachineLearning)](./2Undergraduate/ML/ML.md)
-  - [MI(MedicialImage)](./2Undergraduate/MI/MI.md)
+  - [TensorFlow](./2Postgraduate/TensorFlow/TensorFlow.md)
+  - [ML(MachineLearning)](./2Postgraduate/ML/ML.md)
+  - [MI(MedicialImage)](./2Postgraduate/MI/MI.md)
   - NLP(NaturalLanguageProcessing)
   - DL(DeepLearning)
   - TensorFlow
