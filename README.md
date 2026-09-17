@@ -2,7 +2,40 @@
 
 # CONTENT
 
-## 一、本科阶段
+## 五、博士研究生阶段
+
+  - [服务器使用本地电脑的VPN使用Codex操控服务器工作](./5PhD/ServerUseCodexByLocalVPN.md)
+
+## 四、硕士研究生阶段
+
+  - [模式识别](https://github.com/Allenem/PatternRecognition)
+  - [深度学习](https://github.com/Allenem/DeepLearningCourse)
+  - [医学影像](https://github.com/Allenem/MedicalImage)
+  - PyTorch
+    - [PyTorch总结](./2Postgraduate/Pytorch/5conclusion.md)
+    - [快速入门](./2Postgraduate/Pytorch/1quick_start.md)
+    - [Tensor&autograd](./2Postgraduate/Pytorch/2Tensor&autograd.md)
+    - [神经网络工具箱nn](./2Postgraduate/Pytorch/3neural_network.md)
+    - [PyTorch中常用的工具](./2Postgraduate/Pytorch/4utility.md)
+    - 以下未完不续了 。 。 。
+    - 实战
+      - PyTorch实战1：猫狗二分类
+      - PyTorch实战2：GAN生成插画
+      - PyTorch实战3：风格迁移
+      - PyTorch实战4：RNN写诗
+      - PyTorch实战5：ImageCaption看图说话
+      - MNIST小试牛刀
+      - MobileNet详解及PyTorch实现
+      - SENet详解及PyTorch实现
+      - EfficientNet详解及PyTorch实现
+  - [TensorFlow](./2Postgraduate/TensorFlow/TensorFlow.md)
+  - [ML(MachineLearning)](./2Postgraduate/ML/ML.md)
+  - [MI(MedicialImage)](./2Postgraduate/MI/MI.md)
+  - NLP(NaturalLanguageProcessing)
+  - DL(DeepLearning)
+  - TensorFlow
+
+## 三、本科阶段
 
   - [考研相关](./1Graduate/考研相关.md)
   - [华工电信学院本科实验课设](./1Graduate/华工电信学院本科实验课设.md)
@@ -48,36 +81,7 @@
     - [Object Detection](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_table_of_contents_objdetect/py_table_of_contents_objdetect.html)
     - [OpenCV-Python Bindings](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_bindings/py_table_of_contents_bindings/py_table_of_contents_bindings.html)
 
-## 二、研究生阶段
-
-  - [模式识别](https://github.com/Allenem/PatternRecognition)
-  - [深度学习](https://github.com/Allenem/DeepLearningCourse)
-  - [医学影像](https://github.com/Allenem/MedicalImage)
-  - PyTorch
-    - [PyTorch总结](./2Postgraduate/Pytorch/5conclusion.md)
-    - [快速入门](./2Postgraduate/Pytorch/1quick_start.md)
-    - [Tensor&autograd](./2Postgraduate/Pytorch/2Tensor&autograd.md)
-    - [神经网络工具箱nn](./2Postgraduate/Pytorch/3neural_network.md)
-    - [PyTorch中常用的工具](./2Postgraduate/Pytorch/4utility.md)
-    - 以下未完不续了 。 。 。
-    - 实战
-      - PyTorch实战1：猫狗二分类
-      - PyTorch实战2：GAN生成插画
-      - PyTorch实战3：风格迁移
-      - PyTorch实战4：RNN写诗
-      - PyTorch实战5：ImageCaption看图说话
-      - MNIST小试牛刀
-      - MobileNet详解及PyTorch实现
-      - SENet详解及PyTorch实现
-      - EfficientNet详解及PyTorch实现
-  - [TensorFlow](./2Postgraduate/TensorFlow/TensorFlow.md)
-  - [ML(MachineLearning)](./2Postgraduate/ML/ML.md)
-  - [MI(MedicialImage)](./2Postgraduate/MI/MI.md)
-  - NLP(NaturalLanguageProcessing)
-  - DL(DeepLearning)
-  - TensorFlow
-
-## 三、前端
+## 二、前端
 
 ### 1.Vue
 
@@ -131,7 +135,7 @@
 
 ### 7.CSS
 
-## 四、一些小项目
+## 一、一些小项目
 
   - [资金管理系统(Vue+Node+ElementUI)](./4SomeProjects/CapitalManagementSystem.md)
   - [购物网站(Vue+Bootstrap)](./4SomeProjects/vue-dashboard.md)
